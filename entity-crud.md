@@ -19,8 +19,8 @@ manage must have **grid** and **search**
     - delete
 - search
   - all entities searchable fields
-   > each *search field type* matches that entites field and it can has it's own filter structure.
-   > all filter should **AND** together as they send in a request.
+  > each *search field type* matches that entites field and it can has it's own filter structure.
+  > all filter should **AND** together as they send in a request.
 
 manage must have a link to goto that entity create form, this can be done with:
 
