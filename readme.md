@@ -6,3 +6,4 @@
 - [url structure](/url.md)
 - [translation](/translation.md)
 - [permission](/permission.md)
+- [message](/message.md)

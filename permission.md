@@ -24,5 +24,5 @@ on page loading (component initing (mounting)):
 - in data grid **actions section** if user doesn't have a specific action, that action should not be visible.
   - if in some case **action visibility** is important it should be disable.
 
-- in form action
+- in form
   - form's all buttons and link visibility depending on it's own permission(s).
