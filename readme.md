@@ -7,3 +7,4 @@
 - [translation](/translation.md)
 - [permission](/permission.md)
 - [message](/message.md)
+- [component](/Components/gridComponent.md)
