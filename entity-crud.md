@@ -15,14 +15,8 @@ manage must have **grid** and **search**
   - filter (optional)
   - actions
     - view
-        - hidden or show culomn
-        - select row
-        - select all rows
     - update
     - delete
-    - create
-  - theme(optional)
-  - reting row(optional)
 - search
   - all entities searchable fields
   > each *search field type* matches that entites field and it can has it's own filter structure.
