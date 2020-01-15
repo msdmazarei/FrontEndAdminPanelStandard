@@ -1,47 +1,37 @@
   # GRID COMPONENT
+   Version 1.0.0
 
   ## Requirement
-  Every Grid or List of data needs some items & actions
-
-   ### Data
-- Array of Data
-
-   ### Actions
-    - update
-    - delete
-    - create
-    - filter (optional)
-    - rating row(optional)
-
-   ### View
-    - pagination
-    - sort
-    - hidden or show culomn
-    - select row
-    - select all rows
-    - theme(optional)
-
-
-  ## SERVER
-  - An Array Of data for Listing
-  - An API for SEARCH in list(optional)
-  - An API for Filter in list(optional)
-  - An API for add new item to list(optional)
-  - An API for delete an item from list(optional)
-  - An API for edit an item of list(optional)
-  - An API for pagination list 0r scrolling(optional)
+  Every Grid or List of data needs some items & actions & View
 
   ## PROPS
   Every Grid Component needs some props:  
-  - sort({sort:boolean, sortItem: Array of sortItem})
-  - filter ({filter:boolean, filterItems:Array of itemFilter})
-  - search ({search:boolean, methodForSearch})
-  - viewCulomn (boolean)(optional)
-  - select row 
-  - select all rows
-  - update(methodForEdit)
-  - delete(methodForDelete)
-  - create(methodForadd)
-  - theme(optional)
-  - rating row(boolean)
+  - Data: Array<T>
+  - ColDef : Array <{title:string, icon: string, valueGetter:function, displayValue:function}>
+  - Actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
+  - footer : componentFooter
+  - RowNumber : number
   
+  ### Data: Array<T>
+  Data for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
+
+  ### ColDef 
+  colDef is a props which define for every column:
+  - title: the title of col
+  - icon : the icon of col
+  - valueGetter: a function which get row value and return the value that is need for this col
+  - displayValue : a function which get the value from the valueGetter function for every col and return the display value
+
+  ### Actions 
+  Actions is an array of action which define for every action
+  - title: the title for action
+  - icon: the icon for action
+  - actionFn: is a function for every row which get the row value and return void
+
+  ### Footer
+  is a component for grid footer which has following props:
+  - onNextPage function for pagination
+  - onPrewPage function for paginamtion
+
+  ### RowNumber
+  RowNumber is recognised for number of row for every page
