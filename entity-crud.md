@@ -37,8 +37,13 @@ save form must have form elements match all entitie's client property.
 this form has action create or update depend on we create a record or update one (in create mode reset button is useful).
 
 mainly save page permission is main action [permission](/permission.md):
-   for example in create page page permission is ```<entity>-create```
+   for example in create page, page permission is ```<entity>-create```
    in update is ```<entity>-update```
    in view is ```<entity>-view```
 
 > view page can be handled in save page only with view permission and no action (update or create).
+
+### refrences
+
+in nested entity case, refrence is usefull.
+we can add refrence links and actions for parent or child entity.

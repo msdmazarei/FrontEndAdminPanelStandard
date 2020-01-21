@@ -8,3 +8,4 @@
 - [permission](/permission.md)
 - [message](/message.md)
 - [component](/Components/gridComponent.md)
+- [rtl-ltr direction](/rtl-ltr.md)
