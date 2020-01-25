@@ -4,7 +4,11 @@ admin **CRUD** url should look like this:
 
 ## manage
 
-```siteName/<entityName>/manage/<entityId>```
+```siteName/<entityName>/manage```
+
+### nested manage
+
+```siteName/<entityName>/manage/<parentEntityName>/<parentEntityId>```
 
 ## save
 
