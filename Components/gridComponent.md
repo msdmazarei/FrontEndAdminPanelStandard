@@ -6,11 +6,11 @@
 
   ## PROPS
   Every Grid Component needs some props:  
-  - Data: Array<T>
-  - ColDef : Array <{title:string, icon: string, valueGetter:function, displayValue:function}>
-  - Actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
+  - dataRow: Array<T>
+  - colDef : Array <{title:string, icon: string, valueGetter:function, displayValue:function}>
+  - cctions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
   - footer : componentFooter
-  - RowNumber : number
+  - rowNumber : number
   
   ### Data: Array<T>
   Data for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
