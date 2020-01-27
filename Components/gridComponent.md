@@ -8,7 +8,7 @@
   Every Grid Component needs some props:  
   - dataRow: Array<T>
   - colDef : Array <{title:string, icon: string, valueGetter:function, displayValue:function}>
-  - cctions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
+  - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
   - footer : componentFooter
   - rowNumber : number
   
