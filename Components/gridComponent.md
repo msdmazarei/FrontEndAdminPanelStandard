@@ -9,8 +9,6 @@
   - dataRow: Array<T>
   - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function}>
   - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
-  - footer : componentFooter
-  - rowNumber : number
   
   ### dataRow: Array<T>
   dataRow for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
@@ -28,11 +26,3 @@
   - title: the title for action
   - icon: the icon for action
   - actionFn: is a function for every row which get the row value and return void
-
-  ### footer
-  is a component for grid footer which has following props:
-  - onNextPage function for pagination
-  - onPrewPage function for paginamtion
-
-  ### rowNumber
-  rowNumber is recognised for number of row for every page
