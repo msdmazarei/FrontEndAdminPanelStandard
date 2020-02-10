@@ -9,6 +9,8 @@
   - dataRow: Array<T>
   - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function}>
   - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
+  - height :string
+  -  message : {loading: string, emptyData: string}
   
   ### dataRow: Array<T>
   dataRow for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
@@ -26,3 +28,8 @@
   - title: the title for action
   - icon: the icon for action
   - actionFn: is a function for every row which get the row value and return void
+
+  ### message
+  this props is for costomize loading and empty data row message. which have two items.
+  - loading: the costum message for loading data
+  - emptyData: the costum message, when you do not have any data for show in the grid 
