@@ -21,6 +21,8 @@
   - key : the unique key for every column
   - valueGetter: a function which get row value and return the value that is need for this col
   - displayValue : a function which get the value from the valueGetter function for every col and return the display value
+  - sortable: the type of that is boolean, true that means this column be sortable, and false or undefined means do not need to sort for thos column.
+  - onSort: is a function which add to onClick on sort icon for sorting which return the dataRow type.  
 
   ### actions 
   actions is an array of action which define for every action
