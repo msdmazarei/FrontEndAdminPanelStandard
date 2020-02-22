@@ -7,7 +7,7 @@
   ## PROPS
   Every Grid Component needs some props:  
   - dataRow: Array<T>
-  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function}>
+  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, sortable:boolean, onSort:function:()=>Array<T>}>
   - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
   -  message : string
   
