@@ -7,7 +7,7 @@
   ## PROPS
   Every Grid Component needs some props:  
   - dataRow: Array<T>
-  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, sortable:boolean, onSort:function:()=>Array<T>}>
+  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, onSort:function:(sortType:"ascending"|"descending"|"none")=>Array<T>>
   - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
   -  message : string
   
@@ -21,8 +21,7 @@
   - key : the unique key for every column
   - valueGetter: a function which get row value and return the value that is need for this col
   - displayValue : a function which get the value from the valueGetter function for every col and return the display value
-  - sortable: the type of that is boolean, true that means this column be sortable, and false or undefined means do not need to sort for thos column.
-  - onSort: is a function which add to onClick on sort icon for sorting which return the dataRow type.  
+  - onSort: is a function which add to onClick on sort icon for sorting which return the dataRow. 
 
   ### actions 
   actions is an array of action which define for every action
