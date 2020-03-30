@@ -28,7 +28,7 @@ export abstract class CatodFormElement<
     P extends ICatodFormElementProps,
     S extends ICatodFormElementState
     >
-    extends BaseComponent<P, S> {
+    extends AnyComponent<P, S> {
 
 }
 ```

@@ -8,14 +8,27 @@ all **catod form elements** should extends from [CatodFormElement](CatodFormElem
 
 - textarea, number, ... pattern, ...
 
+- it's a textfield
+
 ### rating
 
+- it's list of stars(or other symbol) and each star assigned to incremental value, that can be selected.
+
 ### tag
+
+- in tag element we can add custom tag and as many as we want (unless it has validation).
+
 ### lookup
+
+- should pick from autocomplete and it's searchable (http request needed).
+
 ### dropdownList
+
+- list of prepared "label, value" data. 
 
 ### datePicker
 
+- able to select date and return timestamp value.
 
 ## other form element
 
