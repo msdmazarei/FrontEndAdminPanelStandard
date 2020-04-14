@@ -7,10 +7,11 @@
   ## PROPS
   Every Grid Component needs some props:  
   - dataRow: Array<T>
-  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, onSort:function:(sortType:"ascending"|"descending"|"none")=>Array<T>>
+  - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, sortable?:boolean>
   - actions ?: Array <{title:string, icon: string, actionFn : (Row)=>void}>
   -  message ?: string
   - onSort ?: a function for sort data
+  - multiSort?: boolean
   
   ### dataRow: Array<T>
   dataRow for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
@@ -18,9 +19,7 @@
   ### columnDef 
   columnDef is a props which define for every column:
   - title: the title of col
-  - icon : the icon of col
   - key : the unique key for every column
-  - valueGetter: a function which get row value and return the value that is need for this col
   - displayValue : a function which get the value from the valueGetter function for every col and return the display value
   - sortable?: is a boolean which allow onSort for this column. 
 
@@ -35,3 +34,6 @@
 
   ### onSort
   there is a lot of senario for sorting data, however we introduce this senario which we need a permision for every column for sorting data and a function for adding event for evry sorting
+
+  ### multiSort
+   This is a boolean props which can allow for display multisort in cattod grid as icon 
