@@ -8,8 +8,9 @@
   Every Grid Component needs some props:  
   - dataRow: Array<T>
   - columnDef : Array <{title:string, icon: string, key: string, valueGetter:function, displayValue:function, onSort:function:(sortType:"ascending"|"descending"|"none")=>Array<T>>
-  - actions : Array <{title:string, icon: string, actionFn : (Row)=>void}>
-  -  message : string
+  - actions ?: Array <{title:string, icon: string, actionFn : (Row)=>void}>
+  -  message ?: string
+  - onSort ?: a function for sort data
   
   ### dataRow: Array<T>
   dataRow for mapping is an array of objects which the type of that is recognised after add array to component, therefor we need  a generic type
@@ -21,7 +22,7 @@
   - key : the unique key for every column
   - valueGetter: a function which get row value and return the value that is need for this col
   - displayValue : a function which get the value from the valueGetter function for every col and return the display value
-  - onSort: is a function which add to onClick on sort icon for sorting which return the dataRow. 
+  - sortable?: is a boolean which allow onSort for this column. 
 
   ### actions 
   actions is an array of action which define for every action
@@ -31,3 +32,6 @@
 
   ### message
   this props is for costomize empty data row message.
+
+  ### onSort
+  there is a lot of senario for sorting data, however we introduce this senario which we need a permision for every column for sorting data and a function for adding event for evry sorting
